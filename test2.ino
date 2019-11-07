@@ -108,8 +108,8 @@ return 1;
 
 int smileyat20(String cmd) {
 if(cmd == "on") {
-b.ledOn(1,255,0,0);
-b.ledOn(11,255,0,0);
+b.ledOn(2,255,0,0);
+b.ledOn(10,255,0,0);
 
 b.ledOn(5,255,0,0);
 b.ledOn(6,255,0,0);
