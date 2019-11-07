@@ -40,7 +40,10 @@ class ViewController: UIViewController {
                 
             }
         }
-        
+        func action() {
+            time += 1
+            timerLabel.text = String(time)
+        }
       
     }
     
@@ -65,16 +68,13 @@ class ViewController: UIViewController {
     
     @IBAction func startButton(_ sender: Any) {
 
-       timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(option), userInfo: nil, repeats: true)
         if( timerLabel.text == "20"){
             timer.invalidate()
         }
     }
     
-    @objc func action() {
-        time += 1
-        timerLabel.text = String(time)
-    }
+ 
 
 }
 
